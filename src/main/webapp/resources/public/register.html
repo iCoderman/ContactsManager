@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CMS - Contacts Management System @iCoderman</title>
+    <link rel="stylesheet" href="/resources/public/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/resources/public/js/angular.min.js"></script>
+    <script type="text/javascript" src="/resources/public/js/angular-messages.min.js"></script>
+    <script type="text/javascript" src="/resources/public/js/spring-security-csrf-token-interceptor.min.js"></script>
+    <script type="text/javascript" src="/resources/public/js/common.js"></script>
+    <script type="text/javascript" src="/resources/public/js/register.js"></script>
+</head>
+<body  ng-app="registerUserApp">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">CMS - Contacts Management System</a>
+                    </div>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                </ul>
+            </nav>
+
+            <div class="content">
+                <h3>Register</h3>
+                <main ng-controller="BaseFormCtrl">
+                <form name="form" ng-submit="registerUser()" class="pure-form login-form" novalidate ng-controller="RegisterUserCtrl">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" ng-model="vm.email"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" ng-model="vm.password"/>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                </main>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
