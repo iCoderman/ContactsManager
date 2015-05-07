@@ -55,9 +55,5 @@ public class Contact {
 
 	@Getter
 	@Setter
-	private String address;
-
-	@Getter
-	@Setter
 	private String email;
 }

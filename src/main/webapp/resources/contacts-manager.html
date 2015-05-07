@@ -26,7 +26,35 @@
             </nav>
 
             <div class="content">
-                <h3>CONTACTS</h3>
+                <h3>Contacts</h3>
+
+
+                <form name="form" ng-submit="addContact()" class="pure-form" novalidate ng-controller="ContactsCtrl">
+                    <div class="form-group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" class="form-control" id="first_name" name="first_name" ng-model="c.first_name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">First Name</label>
+                        <input type="text" class="form-control" id="last_name" name="last_name" ng-model="c.last_name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Phone</label>
+                        <input type="text" class="form-control" id="phone" name="phone" ng-model="c.phone"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" ng-model="c.email"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" ng-model="vm.password"/>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+
+
+
             </div>
         </div>
 
